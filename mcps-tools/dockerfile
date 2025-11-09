@@ -1,0 +1,16 @@
+# este fichero se usa para los despliegues tanto de pre como pro
+# se puede probar con: deno-docker-test y adaptando el .env
+FROM denoland/deno:alpine-2.4.4
+
+WORKDIR /app
+
+COPY deno.json .
+
+RUN apk add --no-cache zlib libpng libzip unzip curl openssh make util-linux
+
+RUN mkdir -p /app/storage/cache && mkdir -p /app/storage/logs /app_shared
+RUN chmod -R 777 /app/storage/cache /app/storage/logs /app_shared
+
+EXPOSE 8003
+
+CMD ["sh", "-c", "deno --version && deno task start"]

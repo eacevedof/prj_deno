@@ -1,0 +1,6 @@
+{
+    "imports": {
+        "App/": "./App/",
+        "Tests/": "./Tests/"
+    }
+}

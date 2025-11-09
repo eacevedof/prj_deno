@@ -1,0 +1,26 @@
+{
+    "tasks": {
+        "check-app": "cat .env; deno run --allow-all --env-file=.env ./App/Console/console.ts app:check-app",
+        "check-email": "deno run --allow-all --env-file=.env ./App/Console/console.ts app:check-email",
+        "check-pg": "deno run --allow-all --env-file=.env ./App/Console/console.ts app:check-pg",
+
+        "tests": "deno test --allow-all --env-file=.env Tests/test.ts",
+
+        "deploy": "deno run --allow-all --env-file=.env ./App/Console/console.ts app:deploy",
+
+        "start": "deno run --allow-all --env-file=.env ./public/index.ts"
+    },
+
+    "imports": {
+        "App/": "./App/",
+        "Tests/": "./Tests/",
+        "md5": "npm:md5@^2.3.0"
+    },
+
+    "npm": {
+        "specifiers": [
+            "path-to-regexp@^6.3.0",
+            "redis@^5.6.0"
+        ]
+    }
+}

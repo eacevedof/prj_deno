@@ -1,0 +1,14 @@
+{
+    "strict": true,
+    "compilerOptions": {
+        "module": "esnext",
+        "paths": {
+            "App/*": [
+                "./App/*"
+            ],
+            "Tests/*": [
+                "./Tests/*"
+            ]
+        }
+    }
+}
