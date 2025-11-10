@@ -28,6 +28,16 @@ export enum EnvKeyEnum {
     APP_TUNNEL_KEY_FILE     = "APP_TUNNEL_KEY_FILE",
 
     APP_ALERT_EMAIL_TO      = "APP_ALERT_EMAIL_TO",
+
+    // MCP Workflow APIs
+    OPENAI_API_KEY          = "OPENAI_API_KEY",
+    ANTHROPIC_API_KEY       = "ANTHROPIC_API_KEY",
+
+    // Azure DevOps & Wiki
+    AZURE_DEVOPS_ORG_URL    = "AZURE_DEVOPS_ORG_URL",
+    AZURE_DEVOPS_PROJECT    = "AZURE_DEVOPS_PROJECT",
+    AZURE_DEVOPS_PAT        = "AZURE_DEVOPS_PAT",
+    AZURE_WIKI_ID           = "AZURE_WIKI_ID",
 }
 
 export function getEnv(envKey: EnvKeyEnum): string|null {

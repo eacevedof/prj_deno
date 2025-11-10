@@ -1,4 +1,4 @@
-import { AuthKeyEnum } from "App/Modules/Authenticator/Application/Domain/Enums/AuthKeyEnum.ts";
+import { AuthKeyEnum } from "App/Modules/Authenticator/Domain/Enums/AuthKeyEnum.ts";
 import { CustomRequestBodyTypeEnum } from "App/Modules/Shared/Infrastructure/Components/Http/CustomRequestBodyTypeEnum.ts";
 import { InterfaceCustomRequest } from "App/Modules/Shared/Infrastructure/Components/Http/CustomRequestInterface.d.ts";
 

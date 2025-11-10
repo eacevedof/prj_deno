@@ -5,10 +5,10 @@ import { AbstractApiController } from "App/Modules/Shared/Infrastructure/Control
 import { HttpResponseCodeEnum } from "App/Modules/Shared/Infrastructure/Enums/HttpResponseCodeEnum.ts";
 import { HttpResponseMessageEnum } from "App/Modules/Shared/Infrastructure/Enums/HttpResponseMessageEnum.ts";
 
-import { AuthKeyEnum } from "App/Modules/Authenticator/Application/Domain/Enums/AuthKeyEnum.ts";
-import { FailIfWrongAppAuthTokenDto } from "App/Modules/Authenticator/Application/Services/FailIfWrongAppAuthToken/FailIfWrongAppAuthTokenDto.ts";
-import { FailIfWrongAppAuthTokenService } from "App/Modules/Authenticator/Application/Services/FailIfWrongAppAuthToken/FailIfWrongAppAuthTokenService.ts";
-import { AuthenticatorException } from "App/Modules/Authenticator/Application/Domain/Exceptions/AuthenticatorException.ts";
+import { AuthKeyEnum } from "App/Modules/Authenticator/Domain/Enums/AuthKeyEnum.ts";
+import { FailIfWrongAppAuthTokenDto } from "App/Modules/Authenticator/Application/FailIfWrongAppAuthToken/FailIfWrongAppAuthTokenDto.ts";
+import { FailIfWrongAppAuthTokenService } from "App/Modules/Authenticator/Application/FailIfWrongAppAuthToken/FailIfWrongAppAuthTokenService.ts";
+import { AuthenticatorException } from "App/Modules/Authenticator/Domain/Exceptions/AuthenticatorException.ts";
 
 import { CreateUserDto } from "App/Modules/Users/Application/Services/CreateUser/CreateUserDto.ts";
 import { CreateUserService } from "App/Modules/Users/Application/Services/CreateUser/CreateUserService.ts";

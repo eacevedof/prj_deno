@@ -5,7 +5,7 @@ import { AbstractApiController } from "App/Modules/Shared/Infrastructure/Control
 import { HttpResponseCodeEnum } from "App/Modules/Shared/Infrastructure/Enums/HttpResponseCodeEnum.ts";
 import { HttpResponseMessageEnum } from "App/Modules/Shared/Infrastructure/Enums/HttpResponseMessageEnum.ts";
 
-import { AuthenticatorException } from "App/Modules/Authenticator/Application/Domain/Exceptions/AuthenticatorException.ts";
+import { AuthenticatorException } from "App/Modules/Authenticator/Domain/Exceptions/AuthenticatorException.ts";
 
 import { SendPushNotificationDto } from "App/Modules/Notifications/Application/SendPushNotification/SendPushNotificationDto.ts";
 import { SendPushNotificationService } from "App/Modules/Notifications/Application/SendPushNotification/SendPushNotificationService.ts";
